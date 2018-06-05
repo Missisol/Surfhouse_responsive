@@ -1,0 +1,537 @@
+@import "_import";
+
+body {
+    margin: 0;
+    background: @bgnOneColor;
+}
+
+.header {
+    width: 100%;
+    height: 700px;
+    background: url(../images/indexBack.jpg) center center;
+    background-size: cover;
+
+    @media all and (min-width: 0) and (max-width: 767px) {
+        height: 850px;
+    }
+}
+
+.container {
+    position: relative;
+    height: inherit;
+}
+
+.xsNavBar {
+    border: none;
+     margin: 0 -15px;
+     z-index: 1;
+ }
+ 
+ .navbar-default .navbar-toggle:focus, 
+ .navbar-default .navbar-toggle:hover {
+     background-color: @secondColor;
+ }
+
+.navbar-brand.xsLogo {
+    font-size: 20px;
+    font-family: 'Raleway Black', sans-serif;
+    text-transform: uppercase;
+    color: @firstColor;
+    background: url(../images/Logo_surfhouse.png) no-repeat 15px center;
+    background-size: 17%;
+    padding-left: 60px;
+
+    &:hover {
+        color: @firstColor;
+    }
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 50px;
+    padding-top: 92px;
+    position: absolute;
+    top: 22px;
+    left: 85px;
+    background: url(../images/Logo_surfhouse.png) no-repeat 20px top;
+    background-size: 81%;
+    font-size: 20px;
+    font-family: 'Raleway Black', sans-serif;
+    text-transform: uppercase;
+    color: @firstColor;
+
+    &:hover {
+    text-decoration: none;
+    color: @firstColor;
+    }
+}
+
+.social {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    @media all and (min-width: 0) and (max-width: 767px) {
+        left: 15px;
+        top: 65px;
+        width: 270px;
+}
+
+    i {
+        font-size: 19px;
+        color: @secondColor;
+
+        @media all and (min-width: 0) and (max-width: 767px) {
+            font-size: 30px;
+    }
+        }
+}
+
+.bannerWelcome {
+    position: absolute;
+    top: 336px;
+    width: 270px;
+    height: 300px; 
+    background-color: @thirdColor;
+
+    @media all and (min-width: 768px) and (max-width: 991px) {
+            top: 243px;
+        }
+
+    @media all and (min-width: 0) and (max-width: 767px) {
+            top: 110px;
+        }
+}
+
+.headlineTextWelcome {
+    font-family: 'Raleway Bold', sans-serif;
+    color: @fourthColor;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 79px 0 0 25px;
+}
+
+.textWelcome {
+    font-family: 'Raleway Bold Italic', sans-serif;
+    color: @fourthColor;
+    font-size: 18px;
+    line-height: 14px;
+    margin: 20px 30px 82px 22px;
+}
+
+.slide {
+    position: absolute;
+    top: 243px;
+    right: 93px;
+    width: 313px;
+    height: 169px;
+    color: @thirdColor;
+
+    @media all and (min-width: 0) and (max-width: 767px) {
+            top: 425px;
+            left: 15px;
+            width: 290px;
+        }
+
+    a {
+        text-decoration: none;
+        color: @firstColor; 
+    }
+}
+
+.titleSlide {
+    font-family: 'Raleway ExtraBold', sans-serif;
+    font-size: 48px;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.titleSlideText {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 7px;
+}
+
+.buttonBay {
+    display: block;
+    width: 124px;
+    height: 49px;
+    background-color: @thirdColor;
+    line-height: 49px;
+    font-family: 'Raleway Black', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: @firstColor;
+    margin-top: 62px;
+}
+
+.containerLeft, 
+.containerRight  {
+    margin-top: -20px;
+}
+
+.containerRight {
+    background: @bgnTwoColor;
+
+    @media (max-width: 767px) {
+            margin-top: 30px;
+        }
+}
+
+.mainMenu {
+    background-color: #26d2fc;
+    margin: 0;
+    padding: 0;
+
+    a {
+        display: block;
+        font-family: 'Roboto Black',sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 37px;
+        text-decoration: none;
+        color: @firstColor;
+        padding-left: 40px;
+
+        &:first-child {
+            height: 66px;
+            line-height: 66px;
+            background-color: @fourthColor;
+            color: @secondColor; 
+        }
+
+        &:hover {
+            background-color: @fourthColor;
+            color: @secondColor;
+        }
+    }
+}
+
+.boxNowIsOpen {
+    height: 300px;
+    background-color: #e0e0e0;
+    margin-top: 30px;
+    position: relative;
+    background: url(../images/store.jpg) no-repeat center center;
+    background-size: cover;
+    border: 8px solid @secondColor;
+
+    @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+        
+    span {
+        font-family: 'Raleway Black Italic', sans-serif;
+        font-size: 36px;
+        line-height: 36px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 129px;
+        right: 20px;
+    }
+}
+
+.headerProducts {
+    font-family: 'Roboto Black Italic', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #707070; 
+    padding-left: 25px;
+    line-height: 78px;
+ }
+
+ .containerNewProducts::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+   .oneProductCol {
+       width: 50%;
+       float: left;
+   }    
+}
+
+.oneProduct {
+    background-color: @secondColor;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+
+    img {
+        width: 100%;
+        margin-bottom: 17px;
+    }
+}
+
+.cornerRed, .cornerYellow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    z-index: 1;
+    font-family: 'Roboto Regular',sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    padding: 9px 0 0 24px;
+    box-sizing: border-box;
+}
+
+.cornerRed {
+    background: url(../images/new-corner.png) no-repeat;
+    color: @secondColor;
+}
+
+.cornerYellow {
+    background: url(../images/hot-corner.png) no-repeat;
+    color: @firstColor;
+    font-weight: bold;
+}
+
+.descriptionProductWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 50px;
+}
+
+.nameProduct {
+    font-family: 'Roboto Black Italic', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 10px;
+    color: @fourthColor;
+    max-height: 2.4em;
+    overflow: hidden;
+}
+
+.priceProduct {
+    font-family: 'Roboto Black Italic', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: @fourthColor;
+    text-align: right;
+
+    span {
+        color: #e24602;
+        font-size: 14px;
+        text-decoration: line-through;
+    }
+}
+
+.brand {
+    background-color: @secondColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+
+
+    img {
+        padding: 5px 10px;
+    }
+}
+
+.instagramFeed {
+    background-color: #eaeaea;
+    padding: 50px 0;
+}
+
+.instagramFeedTitle {
+    font-family: 'Roboto Black Italic', sans-serif;
+    font-size: 18px;
+    color: @fourthColor;
+    text-align: center;
+
+    span {
+        font-size: 22px;
+    }
+    
+    img {
+       margin-right: 5px;
+    }
+}
+
+.instagramPhoto {
+    background-color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+
+    img {
+        border: 8px solid @secondColor;
+        margin: 2px;
+    }
+}
+
+.socialBig {
+    display: flex;
+
+    @media (max-width: 575px) {
+        flex-direction: column;
+    }
+
+    a {
+        width: calc(100%/3);
+        font-size: 72px;
+        color: @secondColor;
+        text-align: center;
+        line-height: 150px;
+        background-color: #3fccfd;
+
+        @media (max-width: 575px) {
+                width: auto;
+            }
+
+        &:first-child {
+            background-color: #3b5997;
+        }
+
+        &:last-child {
+            background-color: #cb2027;
+        }
+    }
+}
+
+.footerTopWrap {
+    width: 100%;
+    background-color: #373737;
+}
+
+.container .footerTop::before,
+.container .footerTop::after {
+    display: none;
+}
+
+.footerTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+.footerMenu {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: @secondColor;
+    flex-grow: 1;
+    padding: 10px;
+
+    .columnHead {
+        font-family: 'Raleway ExtraBold', sans-serif;
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+
+    .footerMenuColumn a {
+        display: block;
+        color: @secondColor;
+    }
+}
+
+.newsLetter {
+    width: 270px;
+ }
+ 
+ .aboutAs {
+     width: 235px;
+ }
+
+ .newsLetterText {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="submit"] {
+    height: 30px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: none;
+    font-size: 12px;
+    line-height: 30px;
+    outline: none;
+}
+
+input[type="email"] {
+    width: 180px;
+    background: @thirdColor;
+    font-family: 'Roboto Bold',sans-serif;
+    color: rgba(51, 51, 51, 0.45);
+    padding: 0 0 0 21px;
+}
+
+input[type="submit"] {
+    width: 71px;
+    background: @firstColor;
+    font-family: 'Roboto Regular',sans-serif;
+    color: @secondColor;
+    padding: 0;
+}
+
+.paymentMethods {
+    display: flex;
+    width: 254px;
+    margin-top: 46px;
+    justify-content: space-between;
+}
+
+.aboutAsPhone, .aboutAsEmail {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.aboutAsEmail span {
+    color: #faef03;
+}
+
+.footerBottomWrap {
+    width: 100%;
+    background-color: @fourthColor;
+}
+
+.footerBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'Roboto Regular',sans-serif;
+    font-size: 12px;
+    color: #dad9d9;
+    line-height: 50px;
+    padding: 0 10px;
+    flex-grow: 1;
+
+    @media all and (min-width: 0) and (max-width: 641px) {
+            line-height: 18px;
+            padding-top: 10px;
+        }
+}
+
+.socialFooter {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    i {
+        font-size: 16px;
+        color: @secondColor;
+    }
+}
